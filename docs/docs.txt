@@ -1,0 +1,10 @@
+The client-server model describes how a server provides resources and services to one or more clients. Examples of servers include web servers, mail servers, and file servers. Each of these servers provide resources to client devices, such as desktop computers, laptops, tablets, and smartphones. Most servers have a one-to-many relationship with clients, meaning a single server can provide resources to multiple clients at one time.
+
+When a client requests a connection to a server, the server can either accept or reject the connection. If the connection is accepted, the server establishes and maintains a connection with the client over a specific protocol. For example, an email client may request an SMTP connection to a mail server in order to send a message. The SMTP application on the mail server will then request authentication from the client, such as the email address and password. If these credentials match an account on the mail server, the server will send the email to the intended recipient.
+
+Online multiplayer gaming also uses the client-server model. One example is Blizzard's Battle.net service, which hosts online games for World of Warcraft, StarCraft, Overwatch, and others. When players open a Blizzard application, the game client automatically connects to a Battle.net server. Once players log in to Battle.net, they can see who else is online, chat with other players, and play matches with or against other gamers.
+
+While Internet servers typically provide connections to multiple clients at a time, each physical machine can only handle so much traffic. Therefore, popular online services distribute clients across multiple physical servers, using a technique called distributed computing. In most cases, it does not matter which specific machine users are connected to, since the servers all provide the same service.
+
+NOTE: The client-server model may be contrasted to the P2P model, in which clients connect directly to each other. In a P2P connection, there is no central server required, since each machine acts as both a client and a server.
+
