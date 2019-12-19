@@ -6,7 +6,7 @@ var tcpServer = net.createServer((socket)=>{
     console.log("connection is build by client "+ sum)
     sockets.push(socket)
     socket.on("data",(data)=>{
-        if(socket[1]!=null){
+        if(sockets[1]!=null){
               if(sockets[0]==socket){
                 sockets[1].write(data)
               }
@@ -14,7 +14,7 @@ var tcpServer = net.createServer((socket)=>{
                 sockets[0].write(data)
               }}
         else{
-            sockets[0].write()
+            sockets[0].write("connection is not established")
         }
     })
 });
